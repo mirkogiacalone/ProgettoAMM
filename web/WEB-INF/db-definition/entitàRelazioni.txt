@@ -1,0 +1,21 @@
+Users
+ Id  (CHIAVE PRIMARIA), nome, cognome, UrlImgPro, frase, data, password, PotereUtente
+
+Users_Users  n -> n tra Users e Users
+ Id (CHIAVE PRIMARIA), Id_ua (CHIAVE ESTERNA), Id_ub (CHIAVE ESTERNA)
+
+Groups
+ Id (CHIAVE PRIMARIA), Nome, UrlImgPro, argomento, creatore (CHIAVE ESTERNA) 1 -> n con Users
+    
+Users_Groups relazione n -> n tra Groups e Users
+ Id (CHIAVE PRIMARIA), Id_u (CHIAVE ESTERNA), Id_g (CHIAVE ESTERNA)
+
+Post
+ Id (CHIAVE PRIMARIA), autore (CHIAVE ESTERNA) relazione 1 -> n con tabella Users
+ destinatario (CHIAVE ESTERNA) relazione 1 -> n con tabella Users
+ gruppo (CHIAVE ESTERNA) relazione 1 -> n con tabella Goups
+ content
+ tipo
+ allegato 
+
+

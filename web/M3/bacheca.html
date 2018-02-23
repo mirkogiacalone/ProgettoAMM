@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Bacheca</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="HTML, Bacheca, PHP, MySQL, AMM">
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    </head>
+    
+    <body>
+        
+         <nav> 
+             <ol>
+                <li><button onclick="location.href='login.html'">Login</button></li>
+                <li><button onclick="location.href='descrizione.html'">Descrizione</button></li>
+                <li><button>Logout</button></li>
+             </ol> 
+        </nav>
+                <div id="inserisciPost">
+            <form action="Bacheca" method="get">
+                <div>
+                    <h2>Nuovo post su questa bacheca</h2>
+                </div>
+                <div>
+                    <label for="FrasePers">Testo:</label><textarea name="FrasePers" rows="2" cols="3" id="FrasePers" placeholder="Inserire il testo del post"></textarea>
+                </div>
+                <div>
+                    <label for="link">Allegato:</label><input type="url" name="link" id="link" placeholder="Inserire il link dell'allegato">
+                </div>
+                <div>
+                    <div class="tipoi">
+                        <input type="radio" name="tipo" id="immagine"><label for="immagine">Immagine</label>
+                    </div>
+                    <div class="tipou">
+                        <input type="radio" name="tipo" id="url"><label for="url">Link</label>
+                    </div>
+                </div>
+                    <!--<div>
+                    <input type="file" name="file" id="file">
+                </div>-->
+                <button type="submit">Crea post</button>
+            </form>
+        </div>
+        
+      
+        
+<div id="BodyDiv">
+    
+                  
+    <div id="Info">
+            <div id="Persone"> 
+                <h2>Persone</h2>
+                <div class="ImgProfiloSX">
+                <img title="fotoProfiloSX" alt="Foto Utente" src="immagini/User-blue.png" /><b>Pinco Pallino</b>
+                </div>
+                
+                <div class="ImgProfiloSX">
+                <img title="fotoProfiloSX" alt="Foto Utente" src="immagini/User-icon.png" /><b>Riccardo Rossi</b>
+                </div>
+                
+                <div class="ImgProfiloSX">
+                <img title="fotoProfiloSX" alt="Foto Utente" src="immagini/usr.png" /><b>Mario Bianchi</b>
+                </div>          
+                
+            </div>
+               
+            <div id="Gruppi">
+                <h2>Gruppi</h2>  
+                <div class="ImgProfiloSX">
+                <img title="fotoProfiloSX" alt="Foto Utente" src="immagini/balloon.png" /><b>Mongolfieristi</b>
+                </div>
+                <div class="ImgProfiloSX">
+                <img title="fotoProfiloSX" alt="Foto Utente" src="immagini/clock.png" /><b>Ritardatari</b>
+                </div>
+            </div>
+               
+           </div>
+    
+    
+    <div id="AllPosts">   
+        <div class="Post">
+         <div class="ImgProfilo">
+         <img title="fotoProfilo" alt="Foto Utente" src="immagini/iconautente.jpg" /><b>Utente Nerdbook 1</b> ha condiviso un post
+         </div>
+         <p>Post condiviso senza allegati</p>
+        </div>
+    
+        <div class="Post">
+         <div class="ImgProfilo">
+         <img title="fotoProfilo" alt="Foto Utente" src="immagini/imgap.jpg" /><b>Utente Nerdbook 2</b> ha condiviso una foto
+         </div><br>
+         <img alt="Foto IMG" src="immagini/imglink.png" width="370" height="200" />
+        </div>
+              <br>
+        <div class="Post">
+         <div class="ImgProfilo">
+         <img title="fotoProfilo" alt="Foto Utente" src="immagini/imgprof.jpg" /><b>Utente Nerdbook 3</b> ha condiviso un link
+         </div>
+         <a href="http://www.html.it/">link a HTML.it</a>
+        </div>
+    
+        </div>
+    
+        </div>
+        
+    </body>
+</html>

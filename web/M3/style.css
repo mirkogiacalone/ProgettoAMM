@@ -1,0 +1,398 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 5-apr-2017, 14.55.35
+    Author     : Mirko
+*/
+/* 3 */
+
+body{
+    background-color: whitesmoke;
+    font: 17px/25px "Open Sans", Arial, sans-serif;
+    margin: 1%;
+}
+
+h1{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #111111;
+    font: 35px/40px "Open Sans", Arial, sans-serif;
+    font-weight: bold;
+}
+
+h2{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #111111;
+    font: 25px/40px "Open Sans", Arial, sans-serif;
+    font-weight: bold;
+}
+
+p{
+    text-align: justify;
+    font-family: "Open Sans", Arial, sans-serif;
+    margin: 1%;
+}
+
+a:link, a:visited{
+    font-family: "Open Sans", Arial, sans-serif;
+    text-decoration: none;
+}
+a:link:hover{
+    font-weight: bold;
+}
+
+input:focus, textArea:focus{
+    background-color: greenyellow;
+}
+
+
+
+/* Barra di navigazione */
+nav{
+    background-color: #B0C4DE; 
+    border-radius: 10px;
+    box-shadow: 0 0 2px rgba(0,0,0,.2);
+    border-radius: 10px;
+    text-align: center;
+}
+
+ nav li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+button{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: #DCDCDC;   
+    padding: 10px 20px;
+    border: solid 1px #0076a3;
+    width: 120px;
+}
+
+#BtnEliminaGruppo button{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: #DCDCDC;   
+    padding: 10px 20px;
+    border: solid 1px #ff0000;
+    width: 160px;
+}
+
+#BtnEliminaPost button{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: #DCDCDC;   
+    padding: 10px 20px;
+    border: solid 1px #ff0000;
+    width: 120px;
+    
+}
+
+
+
+/* Immagine del profilo dell'autore di un post */
+.ImgProfilo img{
+     width: 25px;
+    height: 25px;
+    float: left;
+}
+
+.ImgLogo img{
+     width: 25px;
+    height: 25px;
+    float: left;
+}
+
+
+/* Box di un singolo Post */
+.Post{
+    box-shadow: 0 0 2px rgba(0,0,0,.2);
+    border-radius: 10px;
+    text-align: center;
+    background: #B0C4DE;
+    margin-top: 1%;
+    margin-bottom: 5%;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding: 5%;
+   
+    
+}
+
+#DivProfilo p{
+    text-align: center;
+}
+
+#DivProfilo form{
+    background: #B0C4DE;
+    border-radius: 10px;
+    padding: 3%;
+    height: 310px;
+}
+
+#DivProfilo{
+    box-shadow: 0 0 2px rgba(0,0,0,.2);
+    border-radius: 10px;
+    text-align: center;
+    background: #DCDCDC;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding: 1%;
+}
+
+#DivProfilo label{
+     text-align: left;       
+     font: 15px/40px "Open Sans", Arial, sans-serif;
+       
+    }
+    
+    #DivProfilo input{
+       display: inline-block;
+       float: right;
+       width: 50%;
+    }
+    
+    #DivProfilo strong{
+        text-align: left;       
+     font: 15px/40px "Open Sans", Arial, sans-serif;
+       display: inline-block;
+       float: right;
+       width: 50%;
+    }
+    
+    #DivProfilo img{
+        text-align: right;
+    }
+    
+ 
+
+    /* Box che contiene tutti i post */
+#AllPosts{
+    box-shadow: 0 0 2px rgba(0,0,0,.2);
+    border-radius: 10px;
+    text-align: center;
+    background: #DCDCDC;
+    margin-top: 1%;
+    margin-bottom: 5%;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding: 5%;
+}
+
+   /* Colonna di sinistra che contiene "Persone" e "Gruppi" */ 
+#Info{
+    box-shadow: 0 0 2px rgba(0,0,0,.2);
+    border-radius: 10px;
+    text-align: left;
+    width: 20%;
+    background: #DCDCDC;
+    margin-top: 1%;
+    margin-bottom: 5%;
+    margin-left: 0%;
+    margin-right: 0%;
+    text-align: left;       
+   
+} 
+ /* Immagini del profilo degli utenti sulla sinistra */   
+.ImgProfiloSX img{
+    width: 25px;
+    height: 25px;
+    float: left;
+    display: inline-block;
+}
+
+
+
+#Persone, #Gruppi{
+    margin-top: 1%;
+    margin-bottom: 5%;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding: 5%;
+
+}
+
+
+#FormLogin{
+    text-align: left;
+    width: 30%;
+    height: 30%;
+    background: #DCDCDC;
+    margin: auto;
+    border: 1px solid;
+ }
+ 
+ #FormLogin label{
+    display: inline-block;
+}
+
+
+form{
+ margin-top: 25px; 
+ margin-right: 20px; 
+ margin-bottom: 20px;
+ margin-left: 25px;
+ 
+}
+input{
+    width: 255px;
+    height: 25px;
+    border: 1px solid;
+}
+
+#TextAreaFind input {
+    width: 100%;
+    height: 25px;
+    border: 1px solid;
+}
+
+#BtnTextAreaFind button {
+    width: 100%;
+    height: 100%;
+    border: 1px solid;
+    text-align: center;
+    
+}
+
+#textareaTesto textArea{
+    border: 1px solid;
+}
+
+#BtnCancellaProfilo input {   
+    border: 1px solid #ff0000;      
+}
+
+#BtnAggiornaProfilo input {   
+    border: 1px solid green;      
+}
+
+#btnLogin input{
+ 
+ margin: auto;
+ border: 1px solid blue;
+ 
+}
+
+#BtnIscriviti input{
+    width: 150px;
+    height: 25px;
+    border: 1px solid #7fff00;
+}
+
+#BtnAggiungiAmico input{
+    width: 150px;
+    height: 25px;
+    border: 1px solid #7fff00;    
+}
+
+#LogoLogin img{
+    width: 60px;
+    height: 55px;
+    float: left;
+    margin-right: 16%;
+}
+
+#LogoLogin{
+    
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    
+}
+
+
+label{
+    font-weight: bold;
+}
+
+
+
+
+/*Impostazioni layout*/
+
+@media only screen and (min-width: 1024px)
+{
+
+    #Info{
+        width: 170px;
+        float: left;
+        padding: 5px;
+        font-size: 15px;
+        margin-left: 20%;
+    }
+
+    #AllPosts{
+        width: 410px;
+        float: left;
+        margin-left: 5px;
+    }
+    
+    #DivProfilo{
+        width: 510px;
+        float: left;
+        margin-left: 5px;
+    }
+    
+
+
+    #BodyDiv{
+        width: 1024px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+
+
+@media only screen and (min-width: 480px) and (max-width: 1024px)
+{
+    #AllPost{
+        width: auto;
+        margin: auto;
+    }
+    #FormLogin{
+    text-align: center;
+    width: 60%;
+    height: auto;
+    margin: auto;
+    }
+    
+    
+    #Info{
+        text-align: center; 
+        margin:auto;
+        width: 60%;
+    }
+
+}
+
+@media only screen and (max-width: 480px)
+{
+        #AllPost{
+        width: auto;
+        margin: auto;
+    }
+    #FormLogin{
+        text-align: center;
+        width: auto;
+        height: auto;
+        margin: auto;
+    }
+    
+    
+    #Info{
+        text-align: center; 
+        width: auto;
+        padding: 5px;
+}
+
+}
