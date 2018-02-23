@@ -190,12 +190,12 @@ public class Bacheca extends HttpServlet {
                 {
                     int id = Integer.parseInt(request.getParameter("elimina_post"));
                    
-                    Post appoggio1 = PostFactory.getInstance().getPostById(id);
-                    int appoggio2 = 0, appoggio3 = 0;
-                    if(appoggio1.getAutore() != null)
-                        appoggio2 = appoggio1.getAutore().getId();
-                    if(appoggio1.getGruppo() != null)
-                        appoggio3 = appoggio1.getGruppo().getId();
+                    Post var1 = PostFactory.getInstance().getPostById(id);
+                    int var2 = 0, var3 = 0;
+                    if(var1.getAutore() != null)
+                        var2 = var1.getAutore().getId();
+                    if(var1.getGruppo() != null)
+                        var3 = var1.getGruppo().getId();
 
                     if(PostFactory.getInstance().eliminaPost(id) == true)
                     {
